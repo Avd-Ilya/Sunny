@@ -13,6 +13,7 @@
 		0910702727FB1E7100895CF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0910702527FB1E7100895CF7 /* Main.storyboard */; };
 		0910702927FB1E7300895CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0910702827FB1E7300895CF7 /* Assets.xcassets */; };
 		0910702C27FB1E7300895CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0910702A27FB1E7300895CF7 /* LaunchScreen.storyboard */; };
+		0981ACA727FB6FD9003B318F /* ViewController+alertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0981ACA627FB6FD9003B318F /* ViewController+alertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0910702827FB1E7300895CF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0910702B27FB1E7300895CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0910702D27FB1E7300895CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0981ACA627FB6FD9003B318F /* ViewController+alertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+alertController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		0910701E27FB1E7100895CF7 /* Sunny */ = {
 			isa = PBXGroup;
 			children = (
-				0910701F27FB1E7100895CF7 /* AppDelegate.swift */,
-				0910702127FB1E7100895CF7 /* SceneDelegate.swift */,
-				0910702327FB1E7100895CF7 /* ViewController.swift */,
-				0910702527FB1E7100895CF7 /* Main.storyboard */,
-				0910702827FB1E7300895CF7 /* Assets.xcassets */,
-				0910702A27FB1E7300895CF7 /* LaunchScreen.storyboard */,
-				0910702D27FB1E7300895CF7 /* Info.plist */,
+				0910703427FB1EB800895CF7 /* Extensions */,
+				0910703627FB1F3B00895CF7 /* Views */,
+				0910703727FB1F5300895CF7 /* Models */,
+				0910703827FB1F5B00895CF7 /* View Controllers */,
+				0910703927FB1F6C00895CF7 /* Supporting files */,
 			);
 			path = Sunny;
+			sourceTree = "<group>";
+		};
+		0910703427FB1EB800895CF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0981ACA627FB6FD9003B318F /* ViewController+alertController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0910703627FB1F3B00895CF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0910702527FB1E7100895CF7 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0910703727FB1F5300895CF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0910703827FB1F5B00895CF7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0910702327FB1E7100895CF7 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0910703927FB1F6C00895CF7 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				0910702A27FB1E7300895CF7 /* LaunchScreen.storyboard */,
+				0910701F27FB1E7100895CF7 /* AppDelegate.swift */,
+				0910702127FB1E7100895CF7 /* SceneDelegate.swift */,
+				0910702827FB1E7300895CF7 /* Assets.xcassets */,
+				0910702D27FB1E7300895CF7 /* Info.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0910702427FB1E7100895CF7 /* ViewController.swift in Sources */,
+				0981ACA727FB6FD9003B318F /* ViewController+alertController.swift in Sources */,
 				0910702027FB1E7100895CF7 /* AppDelegate.swift in Sources */,
 				0910702227FB1E7100895CF7 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 465CZ4TQ6V;
-				INFOPLIST_FILE = Sunny/Info.plist;
+				INFOPLIST_FILE = "Sunny/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 465CZ4TQ6V;
-				INFOPLIST_FILE = Sunny/Info.plist;
+				INFOPLIST_FILE = "Sunny/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
