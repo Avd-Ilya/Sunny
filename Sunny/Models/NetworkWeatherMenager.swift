@@ -7,14 +7,19 @@
 
 import Foundation
 
-struct NetworkWeatherMenager {
+class NetworkWeatherMenager {
+    
+    var onCompletion: ((CurrentWeather) -> Void)?
+    
     func fetchCurrentWeather(forCity city: String) {
         let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)"
         guard let url = URL(string: urlString) else { return }
         let sesseiom = URLSession(configuration: .default)
         let task = sesseiom.dataTask(with: url) { data, response, error in
             if let data = data {
-                let currentWeather = self.parseJSON(withData: data)
+                if let currentWeather = self.parseJSON(withData: data) {
+                    self.onCompletion?(currentWeather)
+                }                
             }
         }
         task.resume()
