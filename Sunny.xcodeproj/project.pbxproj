@@ -15,6 +15,7 @@
 		0910702C27FB1E7300895CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0910702A27FB1E7300895CF7 /* LaunchScreen.storyboard */; };
 		0953D0D527FC77AE00A95089 /* NetworkWeatherMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953D0D427FC77AE00A95089 /* NetworkWeatherMenager.swift */; };
 		0953D0D827FC798700A95089 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953D0D727FC798700A95089 /* Constants.swift */; };
+		0953D0DD27FC7F9600A95089 /* CurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953D0DC27FC7F9600A95089 /* CurrentWeatherData.swift */; };
 		0981ACA727FB6FD9003B318F /* ViewController+alertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0981ACA627FB6FD9003B318F /* ViewController+alertController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		0910702D27FB1E7300895CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0953D0D427FC77AE00A95089 /* NetworkWeatherMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherMenager.swift; sourceTree = "<group>"; };
 		0953D0D727FC798700A95089 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0953D0DC27FC7F9600A95089 /* CurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherData.swift; sourceTree = "<group>"; };
 		0981ACA627FB6FD9003B318F /* ViewController+alertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+alertController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				0953D0D427FC77AE00A95089 /* NetworkWeatherMenager.swift */,
+				0953D0DC27FC7F9600A95089 /* CurrentWeatherData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				0910702027FB1E7100895CF7 /* AppDelegate.swift in Sources */,
 				0910702227FB1E7100895CF7 /* SceneDelegate.swift in Sources */,
 				0953D0D527FC77AE00A95089 /* NetworkWeatherMenager.swift in Sources */,
+				0953D0DD27FC7F9600A95089 /* CurrentWeatherData.swift in Sources */,
 				0953D0D827FC798700A95089 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
